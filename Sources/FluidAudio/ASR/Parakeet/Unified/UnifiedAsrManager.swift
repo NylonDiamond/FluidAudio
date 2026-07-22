@@ -1,3 +1,11 @@
+// NOTICE: This file has been modified from the original FluidAudio source.
+// Added `transcribeWithTimings(_:)` and the pure `tokenTimings(from:...)`
+// conversion behind it, so the offline batch path reports the encoder frame
+// each token was emitted at. Offered upstream as
+// https://github.com/FluidInference/FluidAudio/pull/814.
+// Licensed under the Apache License, Version 2.0; see LICENSE at the root of
+// this repository.
+
 import AVFoundation
 @preconcurrency import CoreML
 import Foundation
